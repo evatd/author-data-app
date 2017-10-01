@@ -26,10 +26,10 @@ Navigate to http://localhost:9005/ if your browser doesn't open automatically.
 
 # Notes re state/props which make apps dynamic (simplified)
 
-In the child component - Authorlist (the child) will receive data from authorpage.js so no need for the API. Authorlist will receive data via this.props.authors.map (data is transferred from the parent / controller view via props = immutable, cannot be changed). We have a render function, module export authorList (as components siloed).
+In the child component - authorList (the child) will receive data from authorPage.js (the parent/controller view) so no need for the API. AuthorList will receive data via this.props.authors.map (data is transferred from the parent / controller view via props = immutable, cannot be changed) in the render function. Export authorList (as components are siloed from one another).
 
-In the parent component - Import the child component like Authorlist. In render, add a call to the Authorlist component and pass this Authorlist component the list that sits within the state (see the setinitialstate section = defined here).
+In the parent component - Import child components like authorList. In render, add a call to the authorList component and pass this authorList component the list that sits within the state (see the setInitialState section = list/data defined there).
 
-So, re the parent component: imports a child component; incl. a call to the child in render, and pass data to the child via this.state.
+So, in the parent component: import a child component; incl. a call to the child in render, and pass data to the child via this.state.
 
-So, the child component: import the parent component; in return, receive the data from the parent via this.props.authors via map; export the child component.
+So, in the child component: import the parent component; in return, receive the data from the parent via this.props.authors via map in your render function; export the child component.
