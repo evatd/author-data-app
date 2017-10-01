@@ -12,17 +12,17 @@ Gulp
 Browserify
 Bootstrap
 
-Prioritised the ES6 version of this app.
+Prioritised the ES6 version of this app, with Webpack.
 
 # To get started:
 
-Install NodeJS
-Download this repo
-Open the command line of your choice and cd to the root directory of this repo on your machine
-npm install - Installs packages
-npm install -g gulp - Installs gulp globally. Why globlly?
-gulp - Builds the project and opens your browser. Check here if you have issues.
-Navigate to http://localhost:9005/ if your browser doesn't open automatically.
+- Install NodeJS
+- Download this repo
+- Open the command line of your choice and cd to the root directory of this repo on your machine
+- npm install - Installs packages
+- npm install -g gulp - Installs gulp globally.
+- gulp - Builds the project and opens your browser. Check here if you have issues.
+- Navigate to http://localhost:9005/ if your browser doesn't open automatically.
 
 # Notes re state/props which make apps dynamic (simplified)
 
